@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        // seems like same thing copy pasted but the values are changed and cross verified via console.logs
+    const age = 1000;
+    const money = 10000.50
+    console.log(typeof age); // number
+    console.log(typeof money); // number
+
+    console.log( Math.round(3.5)); // 4
+    console.log(Math.floor(1.5)); // 1
+    console.log(Math.ceil(3.4)); // 4
+    console.log(Math.random()); 
+
+      const smarties = 29;
+      const kids = 3;
+      const eachKidGets = Math.floor(smarties/kids); // 9
+      const leftSmarties = smarties % kids; // 1 - modulo operation
+      console.log(`Each kid gets ${eachKidGets} smarties and ${leftSmarties} smarties are left.`);
+      
+      const x = 2 ** 2; // 4 - power operation using power operator (**)
+      // or
+      const y = Math.pow(2,4); // 16 - power operation using Math.pow
+      console.log(x);
+      console.log(y);
+    </script>
+</body>
+</html>
