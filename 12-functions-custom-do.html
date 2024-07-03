@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        // Function definition
+      
+      function doingBill() {
+      	// this is the function body
+      	console.log('doing doingBill');
+      }
+    
+      // Function call or run
+      
+      doingBill(); // running doingBill (returns undefined)
+
+      function doingBill() {
+      	const total = 100 * 1.13;
+      	return total; // total is returned
+      }
+      
+      doingBill(); // returns 112.999999999
+    
+
+      const myTotal = doingBill();
+      console.log(myTotal); // 112.999999999
+    </script>
+</body>
+</html>
