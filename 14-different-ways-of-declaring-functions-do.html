@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <button class="clickMe">
+        Click Me!
+    </button>
+    <script>
+        // Function definition
+         function doctorize(firstName) {
+    return `Dr. ${firstName}`;
+  }
+
+  // Function call or run     sir here if we don't mention the name 
+//   of function then it will not work need to discuss in next class
+  function getDoctorTitle(firstName) {
+     return `Dr. ${firstName}`;
+    }
+
+    // Anonymous function , this is the correct way of defining the anonymous function
+    const doctorize = function(firstName) {
+    return `Dr. ${firstName}`;
+  };
+
+  // Function Expression, arrow function
+  const inchToCM = inches => {
+      return inches * 2.54;
+    };
+
+    const makeABaby = (first, last) => ({ name: `${first} ${last}`, age: 0 });
+
+
+    // Implicit return
+    const wes = {
+      name: "Westopher Bos",
+      // Method!
+      sayHi: function() {
+        console.log(`Hey ${this.name}`);
+        return "Hey Wes";
+      },
+      // Arrow function
+      wisperHi: () => {
+        console.log("hii wesss im a mouse");
+      },
+      // Short hand Method
+      yellHi() {
+        console.log("HEY WESSSSS");
+      }
+    };
+
+    //for the html interactivity
+    // Click Callback const button = document.querySelector('.clickMe');
+
+    function handleClick() { console.log('Great Clicking!!'); }
+
+button.addEventListener('click', handleClick); // everytime we click the button, the handleClick function is run.
+
+button.addEventListener('click', function() { console.log('Nice Job!!!'); }); // everytime we click the button, the function inside is run.
+
+// Timer Callback setTimeout(() => { console.log('DONE! Time to eat!'); }, 1000); // it runs the console.log after each 1 sec or 1000 milliseconds
+    </script>
+</body>
+</html>
